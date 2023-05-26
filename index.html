@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/mola.css">
+</head>
+
+<body>
+    <img src="../assets/engenharia-removebg-preview.png" alt="">
+    <div class="container">
+        <div class="modal">
+            <div class="CompriTotalMola">
+                <p>Comprimento da mola total:</p>
+                <input type="number" id="compMola">
+            </div>
+            <div class="TotalMolaCompri">
+                <p>Total da mola Comprimida:</p>
+                <input type="number" id="totalMola">
+            </div>
+            <div class="Carga">
+                <p>Carga Esperada mínima:</p>
+                <input type="number" id="cargaEsperadaMin">
+            </div>
+            <div class="Carga">
+                <p>Carga Esperada máxima:</p>
+                <input type="number" id="cargaEsperadaMax">
+            </div>
+
+        </div>
+        <button onclick="testaValor()">Calcular</button>
+        <div class="result">
+            <h3 id="resultCompressao"></h3>
+            <h3 id="resultConstante"></h3>
+            <h3 id="diametroFioh1"></h3>
+            <h3 id="numEspiraisUteis"></h3>
+            <h3 id="diametroMedio"></h3>
+            <h3 id="cargoTotal"></h3>
+        </div>
+    </div>
+
+    </div>
+</body>
+<script src="./scripts/mola.js"></script>
+
+</html>
